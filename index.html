@@ -41,25 +41,48 @@
 
         main {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             padding: 20px;
         }
 
-        .post {
-            max-width: 800px;
-            padding: 20px;
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .content .post {
             background-color: white;
-            margin: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .post img {
+        .content .post img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin-bottom: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
         }
 
         footer {
@@ -83,37 +106,66 @@
     </nav>
 
     <main>
-        <article id="historia" class="post">
-            <h2>Historia de Microsoft</h2>
-            <img src="imagenes/logo%20microsoft.jpg" alt="Sede de Microsoft">
-            <p>
-                Fundada en 1975 por Bill Gates y Paul Allen, Microsoft se ha convertido en una de las empresas de
-                tecnología más influyentes del mundo. Su primer gran éxito fue el sistema operativo MS-DOS, seguido
-                por Windows, que revolucionó el mercado de las computadoras personales.
-            </p>
-        </article>
-        <article id="productos" class="post">
-            <h2>Productos Destacados</h2>
-            <img src="imagenes/mision.png" alt="Productos Microsoft">
-            <p>
-                Microsoft es conocido por una amplia gama de productos, incluyendo:
-            </p>
-            <ul>
-                <li><strong>Windows:</strong> El sistema operativo más utilizado en el mundo.</li>
-                <li><strong>Microsoft Office:</strong> Herramientas de productividad como Word, Excel y PowerPoint.</li>
-                <li><strong>Azure:</strong> Una de las principales plataformas de computación en la nube.</li>
-                <li><strong>Xbox:</strong> Consolas de videojuegos populares entre los gamers.</li>
-            </ul>
-        </article>
+        <!-- Contenedor principal -->
+        <div class="content">
+                <h2 section id="#historia">Historia de Microsoft</h2>
+                <img src="imagenes/logo%20microsoft.jpg" alt="Sede de Microsoft">
+                <p>
+                    Fundada en 1975 por Bill Gates y Paul Allen, Microsoft se ha convertido en una de las empresas de
+                    tecnología más influyentes del mundo. Su primer gran éxito fue el sistema operativo MS-DOS, seguido
+                    por Windows, que revolucionó el mercado de las computadoras personales.
+                </p>
+            
+          
+                <h2 section id="productos">Productos Destacados</h2>
+                <img src="imagenes/mision.png" alt="Productos Microsoft">
+                <p>
+                    Microsoft es conocido por una amplia gama de productos, incluyendo:
+                </p>
+                <ul>
+                    <li><strong>Windows:</strong> El sistema operativo más utilizado en el mundo.</li>
+                    <li><strong>Microsoft Office:</strong> Herramientas de productividad como Word, Excel y PowerPoint.</li>
+                    <li><strong>Azure:</strong> Una de las principales plataformas de computación en la nube.</li>
+                    <li><strong>Xbox:</strong> Consolas de videojuegos populares entre los gamers.</li>
+                </ul>
+          
+          
+                <h2 section id="innovacion">Compromiso con la Innovación</h2>
+                <p>
+                    Microsoft está a la vanguardia de la inteligencia artificial, el aprendizaje automático y la computación
+                    en la nube. La empresa invierte continuamente en investigación y desarrollo para crear soluciones
+                    tecnológicas que mejoren la vida de las personas y las empresas en todo el mundo.
+                </p>
+         
+        </div>
 
-        <article id="innovacion" class="post">
-            <h2>Compromiso con la Innovación</h2>
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h3>Información Secundaria</h3>
+             <p>
+        Microsoft es una de las empresas más valiosas del mundo, con una capitalización de mercado superior a los 2 billones de dólares. 
+        Su misión es "empoderar a cada persona y a cada organización en el planeta para que logren más".
+    </p>
+    <h4>Datos Curiosos</h4>
+    <ul>
+        <li>Bill Gates escribió el primer programa de Microsoft en 1975: un intérprete del lenguaje BASIC para la Altair 8800.</li>
+        <li>El sistema operativo Windows 95 fue un fenómeno global, vendiendo más de 40 millones de copias en su primer año.</li>
+        <li>Microsoft es dueño de LinkedIn, GitHub y Skype, plataformas ampliamente utilizadas a nivel mundial.</li>
+    </ul>
+    <h4>Impacto Global</h4>
+    <p>
+        Microsoft ha estado presente en más de 190 países y desarrolla programas educativos y de sostenibilidad en comunidades de todo el mundo.
+        Su compromiso con la neutralidad de carbono para el año 2030 es un ejemplo de su visión sostenible.
+    </p>
+    <h4>Últimas Adquisiciones</h4>
+    <ul>
+        <li><strong>Activision Blizzard:</strong> Adquisición en 2022 para expandir su presencia en la industria de videojuegos.</li>
+        <li><strong>Nuance Communications:</strong> Compañía de inteligencia artificial y reconocimiento de voz.</li>
+    </ul>
             <p>
-                Microsoft está a la vanguardia de la inteligencia artificial, el aprendizaje automático y la computación
-                en la nube. La empresa invierte continuamente en investigación y desarrollo para crear soluciones
-                tecnológicas que mejoren la vida de las personas y las empresas en todo el mundo.
+                ¿Sabías que Microsoft cuenta con más de 220,000 empleados en todo el mundo? Además, está clasificada como una de las empresas más sostenibles.
             </p>
-        </article>
+        </aside>
     </main>
 
     <footer>
@@ -121,4 +173,3 @@
     </footer>
 </body>
 </html>
-
